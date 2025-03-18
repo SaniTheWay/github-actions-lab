@@ -6,7 +6,7 @@ on: [push, workflow_dispatch]
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
   RESOURCE-GROUP: ${{ secrets.RG_NAME_SECRET }}
-  LOCATION: eastus
+  LOCATION: centralindia
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: ${{secrets.SUBSCRIPTION_SECRET}}
   WEBAPP-NAME: sd-eshoponweb-webapp-githublab
